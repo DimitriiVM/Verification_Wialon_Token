@@ -30,7 +30,6 @@ def Token():
 	if len(TOKEN) == 0 or len(HTTPS) == 0:
 		LabelResult['text'] = "Введены не актуальные данные"
 	#https://app.wialonlocal.com/wialon/ajax.html?svc=token/login&params={"token":"токен"}
-	#7c1e39f2d4ae77c7d7f9f9162992936b91F85258C659515BA2FDF52442A4FA588C69B270
 	URL = "https://" + HTTPS+ "/wialon/ajax.html?svc=token/login&params={\"token\":\""+ TOKEN + "\"}"
 	print(URL)
 	try:
